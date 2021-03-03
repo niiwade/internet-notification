@@ -31,10 +31,10 @@ window.onload = () => { //once window loads code runs
             } else { // user isnt online 
                 offline();
             }
-        }
+        };
         xhr.onerror = () => { //if the URL is incorrect or return a 400 or any other error
             offline();
-        }
+        };
         xhr.send();
     }
 
